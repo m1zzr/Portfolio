@@ -1,0 +1,921 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+
+
+.sp1{
+    text-shadow: 5 5 10px rgba(62, 62, 206, 0.862);
+}
+
+.sp2{
+    text-shadow: 0 0 10px rgba(255, 170, 13, 0.867);
+}
+
+
+
+
+p, h1, h2, h3, a, button {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000; 
+    color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+body.light-theme {
+    background-color: #f0f0f0; 
+    color: #000000; 
+}
+
+
+button, .btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+body.light-theme button, body.light-theme .btn {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 1em 0;
+}
+
+header .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+header .container:hover {
+    box-shadow: 2px 2px 15px 5px rgba(255, 255, 255, 0.4);
+}
+
+.logo {
+    font-family: "Rubik", serif;
+    font-size: 30px; 
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+header nav ul li {
+    margin-right: 1em; 
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.2em; 
+}
+
+
+body.light-theme header {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+body.light-theme .logo {
+    color: black;
+}
+
+body.light-theme header nav ul li a {
+    color: #000000; 
+}
+
+
+.intro, .stats, .skills, .portfolio, .contact, footer {
+    padding: 7em 0;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.light-theme .intro,
+body.light-theme .stats,
+body.light-theme .skills,
+body.light-theme .portfolio,
+body.light-theme .contact,
+body.light-theme footer {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+
+body.light-theme h1, body.light-theme h2, body.light-theme h3, body.light-theme p {
+    color: #000000; }
+
+body.light-theme .card, body.light-theme .portfolio .project {
+    background-color: #e0e0e0; 
+    color: #000000; 
+}
+
+
+.theme-toggle-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+body.light-theme .logo {
+    color: black;
+}
+.container a:hover{
+    color: rgb(145, 145, 145);
+}
+
+body.light-theme .container {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid rgb(0, 0, 0);
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+}
+body.light-theme .container:hover {
+    box-shadow: 5px 3px 3px rgb(44, 44, 44);
+}
+body.light-theme .intro .container{
+    border: none;
+    box-shadow: none;
+}
+
+body.light-theme a {
+    color: rgb(0, 0, 0);
+}
+
+body.light-theme .intro .txt h1 {
+    background-color: white; 
+    color: black;
+    border: 4px dashed rgb(0, 0, 0);
+    border-radius: 10px;  
+    box-shadow: 2px 2px 15px 5px rgba(96, 96, 96, 0.4);
+    transition: box-shadow 0.3s ease; 
+    padding: 20px; 
+}
+body.light-theme .intro {
+    border: #000000 solid;
+}
+
+body.light-theme .intro .txt h1:hover {
+    box-shadow: 2px 2px 15px 10px rgba(0, 0, 0, 0.4);  
+}
+
+body.light-theme .intro .sp1 {
+    text-shadow: rgb(31, 138, 196) 1px 0 10px;
+}
+
+body.light-theme .intro .sp2 {
+    text-shadow: rgb(199, 161, 8) 1px 0 10px;
+}
+
+body.light-theme .stats .stat .counter {
+    background-color: #fcfcfc;
+}
+
+body.light-theme .stats .stat h2 {
+    color: #000000; 
+}
+
+body.light-theme .portfolio h1 {
+    background-color: #ffffff;
+    color: #000000;
+    border: 4px dashed #000000;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease;
+    width: 200px;
+    padding: 10px;
+}
+
+body.light-theme .portfolio h1:hover {
+    box-shadow: 2px 2px 15px 5px rgba(0, 0, 0, 0.4);  
+}
+
+body.light-theme .portfolio-text p {
+    color: #000000;
+}
+
+body.light-theme .portfolio .btn {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+
+.intro {
+    text-align: center;
+    background-color: #000000;
+    margin: 65px;
+    border: rgb(236, 104, 104) solid 600px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em 1em;
+}
+
+.intro .txt {
+    flex: 1;
+    padding-right: 20px;
+    text-align: center;
+}
+
+.intro .txt h1 {
+    font-size: 2.5em;
+    color: white;
+    border: #ffffff dashed;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 24px 28.8px;
+    transition: box-shadow 0.3s ease;
+}
+
+
+
+.intro .btn {
+    margin: 1em;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.intro .btn:hover {
+    background-color: #333;
+}
+
+
+@media (max-width: 768px) {
+    .intro {
+        flex-direction: column;
+        padding: 2em 1em;
+        margin: 20px;
+    }
+
+    .intro .txt h1 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+
+    
+
+    .intro .imgs img {
+        display: none;
+    }
+
+    .intro .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+    body.light-theme .intro {
+        flex-direction: column;
+        padding: 2em 1em;
+        margin: 20px;
+    }
+    body.dark-theme .intro {
+        flex-direction: column;
+        padding: 2em 1em;
+        margin: 20px;
+    }
+
+    body.light-theme .intro .txt h1 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+    body.dark-theme .intro .txt h1 {
+        font-size: 1.8em;
+        margin-bottom: 1em;
+    }
+
+
+    .intro .imgs img {
+        display: none;
+    }
+
+    .intro .btn {
+        display: none;
+    }
+    .nav-item{
+        margin: 0;
+        padding: 6px;
+        
+    }
+    .nav-item a{
+        font-size: 1em;}
+        .nav-item a:hover{
+            color: rgb(122, 122, 122);
+        }
+        
+}
+
+
+
+@media (max-width: 480px) {
+    .intro .txt h1 {
+        font-size: 1.5em;
+    }
+
+    .intro .imgs img {
+        display: none;
+    }
+
+    .intro .btn {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+body.light-theme .portfolio .btn:hover {
+    background-color: #ddd; 
+    transform: translateY(-5px);  
+}
+
+body.light-theme .portfolio img {
+    border: 5px solid #000000;
+    box-shadow: 0 4px 10px #000000;
+}
+
+body.light-theme .portfolio img:hover {
+    transform: scale(1.05); 
+}
+
+body.light-theme footer {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.logo {
+    font-family: "Rubik", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 30px;
+}
+
+header {
+    background-color: #000000;
+    color: #fffefe;
+    padding: 1em 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin-right: 1em;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.intro, .stats, .skills, .portfolio, .contact, footer {
+    padding: 7em 0;
+}
+
+.intro {
+    text-align: center;
+    background-color: #000000;
+}
+
+.intro .btn {
+    margin: 1em;
+    background-color: #000000;
+}
+
+.stats .container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.stat {
+    text-align: center;
+    background-color: #000000;
+}
+
+.stat h2 {
+    color: #ffffff;
+}
+
+.skills, .portfolio, .contact {
+    background-color: #000000;
+}
+
+.portfolio .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.project {
+    width: 45%;
+    margin-bottom: 2em;
+}
+
+.testimonial {
+    border: 3px solid #ccc;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input, .contact form textarea {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact form button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    padding: 1em 0;
+    border: 4px solid white;
+    padding: 20px;
+    margin: 0;
+    border-radius: 20px;
+    box-shadow: #ccc 2px 2px 15px 5px;
+}
+
+hr {
+    border: 0; 
+    height: 2px; 
+    background-color: white; 
+    margin: 2px 0; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.txt {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.imgs {
+    flex: 1;
+    border:2px #222 solid;
+    
+}
+
+.intro {
+    margin: 65px;
+    border: white solid 6px;
+    border-radius: 20px;
+}
+
+.txt h1 {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: #ffffff dashed;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease; 
+}
+
+.txt h1:hover {
+    box-shadow: 2px 2px 15px 5px rgba(255, 255, 255, 0.4);  
+}
+
+.stats {
+    padding: 7em 0;
+    text-align: center;
+}
+
+.stats h1 {
+    color: #fa6603;
+    margin-bottom: 20px;  
+    border: 4px dashed rgb(255, 255, 255); 
+    display: inline-block; 
+    padding: 10px; 
+    width: 250px; 
+    text-align: center; 
+}
+
+.stat {
+    color: white;
+    display: inline-block;
+    margin: 20px;
+}
+body.light-theme .stats h1 {
+    color: #fa6603;
+    margin-bottom: 20px;  
+    border: 4px dashed rgb(0, 0, 0); 
+}
+
+.stat h2 {
+    font-size: 3em;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+    transition: color 0.5s ease, transform 0.5s ease;
+}
+
+.stat.finished h2 {
+    color: #FFA500; 
+    animation: scaleAndShake 1s ease-in-out; 
+}
+
+@keyframes scaleAndShake {
+    0% {
+        transform: scale(1);
+    }
+    25% {
+        transform: scale(1.2);
+    }
+    50% {
+        transform: scale(1);
+    }
+    75% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.skills {
+    background-color: #000000;
+    padding: 7em 0;
+}
+ .html{
+    color: rgb(255, 191, 0);
+}
+.css{
+    color: rgb(51, 89, 214);
+}
+.js{
+    color: #e07b00;
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.txt {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.txt h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+
+
+.image-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image-container img {
+    width: 80%; 
+    max-width: 500px; 
+    border: 5px solid #fff; 
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #ffffff;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.image-container img:hover {
+    transform: scale(1.05); 
+}
+
+.portfolio {
+    background-color: #000000;  
+    color: #ffffff;  
+    padding: 80px; 
+}
+
+.portfolio h1 {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    border: #ffffff dashed;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease; 
+    width: 200px;
+    padding: 10px;
+}
+.portfolio p{
+   margin: 0;
+   max-width:700px ;
+}
+.portfolio h1:hover {
+    box-shadow: 2px 2px 15px 5px rgba(255, 255, 255, 0.4);  
+}
+
+.portfolio .txt h1{
+    display: flex;
+    justify-content: center;
+}
+
+
+.portfolio-text h1 {
+    font-size: 2.5em;
+    color: #ffffff;  
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); 
+}
+
+.portfolio .btn {
+    display: inline-block;
+    padding: 0.8em 2em;
+    background-color: #ffffff;  
+    color: #000000;  
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-top: 2em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.portfolio .btn:hover {
+    background-color: #ddd; 
+    transform: translateY(-5px);  
+}
+
+.portfolio img {
+    display: flex;
+    justify-content: center;
+    width: 400px; 
+    border: 5px solid #fff; 
+    border-radius: 15px;
+    box-shadow: 0 4px 10px #ffffff;
+    transition: transform 0.3s ease-in-out; 
+}
+
+.portfolio img:hover {
+    transform: scale(1.05); 
+}
+
+.contact {
+    padding: 5em 2em;
+    text-align: center;
+    background-color: #000000;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    font-family: 'Rubik', sans-serif;
+}
+.container2{
+    border: 4px white dashed;
+    border-radius: 10px;
+    box-shadow: #afafaf 2px 2px 4px;
+    transition: all 0.3 ease-in-out;
+}
+.container2:hover{
+box-shadow: #fffefe 3px 3px 5px;
+
+
+}
+body.light-theme .contact .container2{
+    border: 4px rgb(0, 0, 0) dashed;
+    border-radius: 10px;
+    box-shadow: #222222 2px 2px 6px;
+    transition: box-shadow 0.5s ease-in-out;
+}
+body.light-theme .contact .container2:hover{
+box-shadow: #000000 5px 5px 10px;
+}
+
+body.light-theme .contact {
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 70%;
+    max-width: 500px;
+    padding: 1em;
+    margin-bottom: 1em;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: transparent;
+    color: inherit;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: #ff8c00;
+    outline: none;
+}
+
+.contact form button {
+    background-color: #ff8c00;
+    color: #fff;
+    padding: 0.8em 2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact form button:hover {
+    background-color: #e07b00;
+    transform: translateY(-5px);
+}
+
+
+body.light-theme .contact form button {
+    background-color: #333;
+    color: #fff;
+}
+
+body.light-theme .contact form button:hover {
+    background-color: #222;
+}
+
+body.light-theme .stats {
+    background-color: #ffffff; 
+    color: #000000; 
+}
+
+body.light-theme .stats .stat {
+    background-color: #f0f0f0;
+    color: #000000;
+}
+
+body.light-theme .stats .stat .counter {
+    background-color: #fcfcfc; 
+    color: #000000; 
+}
+
+body.light-theme .stats .stat .counter p {
+    color: #000000; 
+    background-color: transparent;
+}
+
+body.light-theme .stats .stat h2 {
+    color: #000000; 
+}
+
+
+@media (max-width: 1200px) {
+    .container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+    .imgs{
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro .txt, .intro .imgs {
+        width: 100%;
+        padding: 0;
+    }
+
+    .stats .container {
+        flex-direction: column;
+    }
+
+    .portfolio .projects {
+        flex-direction: column;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+   
+
+  
+}
+
+@media (max-width: 480px) {
+    .intro .txt h1 {
+        font-size: 1.5em;
+    }
+
+    .intro .txt p {
+        font-size: 1em;
+    }
+
+    .intro .imgs img {
+        display: none;
+    }
+
+    .portfolio-text h2 {
+        font-size: 2em;
+    }
+
+    .portfolio-text p {
+        font-size: 1em;
+    }
+    .portfolio img{
+        display: none;
+    }
+    .portfolio{
+        padding: 30px;
+    }
+    .portfolio h2{
+        font-size: 20px;
+
+    }
+}
+
+body.light-theme hr {
+    border: 0; 
+    height: 4px; 
+    background-color: rgb(131, 131, 131); 
+    margin: 1px 0; 
+}
